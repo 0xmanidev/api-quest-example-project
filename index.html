@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Pokédex Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+  <h1>Pokédex Explorer</h1>
+
+  <div class="search">
+    <input
+      id="pokemonInput"
+      placeholder="Enter Pokémon name"
+    />
+    <button onclick="searchPokemon()">Search</button>
+  </div>
+
+  <p id="message"></p>
+
+  <div id="card" class="card hidden">
+
+    <img id="image">
+
+    <h2 id="name"></h2>
+
+    <p>ID: <span id="id"></span></p>
+
+    <p>Height: <span id="height"></span> m</p>
+
+    <p>Weight: <span id="weight"></span> kg</p>
+
+    <div id="types"></div>
+
+  </div>
+
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
